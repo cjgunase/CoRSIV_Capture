@@ -1,6 +1,6 @@
 ## ---------------------------
 ##
-## Script name: Combine_BED.R
+## Script name: merge_bed_files_to_create_final_bed
 ##
 ## Purpose of script: Combine the bed files used for target capture and assing a uniq ID for each region
 ##
@@ -20,7 +20,7 @@
 
 ## set working directory for Mac and PC
 
-setwd("~/Documents/")          # set to paren directory where the bed files resides
+#setwd("~/Documents/")          # set to paren directory where the bed files resides
 
 
 ## ---------------------------
