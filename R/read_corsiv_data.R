@@ -32,7 +32,6 @@ setwd("~/Documents/CoRSIV_Capture")          # Chathura's working directory (mac
 options(scipen = 6, digits = 4) # I prefer to view outputs in non-scientific notation
 
 ## ---------------------------
-
 ## load up the packages we will need:  (uncomment as required)
 
 require(tidyverse)
@@ -198,24 +197,23 @@ corsiv_methy_df_subset$fdr <- p.adjust(corsiv_methy_df_subset$p_value, method = 
 corsiv_methy_df_subset$CoRSIV_ID <- rownames(corsiv_methy_df_subset)
 
 complete_bed_file <- read.table("./combined_corsivs.bed",sep = "\t")
-head(complete_bed_file)
+dim(complete_bed_file)
 
 
 
 to_manhattan <- corsiv_methy_df_subset[c("CoRSIV_ID","p_value")]
 to_manhattan <- merge(to_manhattan,complete_bed_file,by.x = "CoRSIV_ID",by.y = "V4")
-head(to_manhattan)
-
 to_manhattan <- to_manhattan[c("CoRSIV_ID","V1","V2","p_value")]
 colnames(to_manhattan) <- c("SNP","CHR","BP","P")
 #strtoi(substring(to_manhattan$CHR, 4),10)
 to_manhattan$CHR <- strtoi(substring(to_manhattan$CHR, 4),10)
 to_manhattan$BP <- as.numeric(to_manhattan$BP)
 to_manhattan <- na.omit(to_manhattan)
-
+options(repr.plot.width=18, repr.plot.height=16)
 manhattan(to_manhattan, chr="CHR", bp="BP", snp="SNP", p="P",
           suggestiveline = FALSE,col = c("red","blue"),
           annotatePval = 0.001,annotateTop = F)
+
 
 ##############################################################
 complete_bed_file <- read.table("./combined_corsivs.bed",sep = "\t")
@@ -235,20 +233,22 @@ for(i in 1:22){
     
     rownames(corsiv_methy_df_subset_chr_control) <- corsiv_methy_df_subset_chr_control$V5
     corsiv_methy_df_subset_chr_control$V5 <- NULL
-    M_control<-cor(t(corsiv_methy_df_subset_chr_control),use="complete.obs") 
+    M_control<-cor(t(corsiv_methy_df_subset_chr_control),use="complete.obs",method = "spearman") 
     
     rownames(corsiv_methy_df_subset_chr_case) <- corsiv_methy_df_subset_chr_case$V5
     corsiv_methy_df_subset_chr_case$V5 <- NULL
-    M_case<-cor(t(corsiv_methy_df_subset_chr_case),use="complete.obs") 
+    M_case<-cor(t(corsiv_methy_df_subset_chr_case),use="complete.obs",method = "spearman") 
     
     M_case[lower.tri(M_case,diag = T)] <-0
     M_control[upper.tri(M_control,diag = T)] <-0
     M <- M_control + M_case
     
-    pdf(file=paste("./USC_corrplot_Controls_glioma_Cases_",i,".pdf",sep = ""),family = "Courier",width = 50,height = 50)
+    #pdf(file=paste("./pearson_corrplots/USC_Pearson_corrplot_Controls_glioma_Cases_",i,".pdf",sep = ""),family = "Courier",width = 50,height = 50)
+    pdf(file=paste("./spearman_corrplots/USC_Spearman_corrplot_Controls_glioma_Cases_",i,".pdf",sep = ""),family = "Courier",width = 50,height = 50)
+    
     corrplot(M,
              method = "square", tl.cex = 1, tl.col = 'black',
-             diag = FALSE,tl.srt=45,addgrid.col = NA,is.corr = FALSE,addCoef.col = "black",number.cex = 0.2,cl.lim = c(-1,1))
+             diag = FALSE,tl.srt=45,addgrid.col = NA,is.corr = FALSE,cl.lim = c(-1,1))#addCoef.col = "black",number.cex = 0.2,
     dev.off()
 }
 
@@ -257,104 +257,120 @@ for(i in 1:22){
 
 library(psych)
 library("PerformanceAnalytics")
-my_data <- t(corsiv_methy_df_subset_chr_case[89:133,])
+case_focus_region <- t(corsiv_methy_df_subset_chr_case[89:133,])
+M_case<-cor(case_focus_region,use="complete.obs",method = "pearson")
 
-pdf(file=paste("./test",i,".pdf",sep = ""),family = "Courier",width = 50,height = 50)
-#chart.Correlation(my_data, histogram=F, pch=19)
+control_focus_region <- t(corsiv_methy_df_subset_chr_control[89:133,])
+M_control<-cor(control_focus_region,use="complete.obs",method = "pearson")
+
+M_case[lower.tri(M_case,diag = T)] <-0
+M_control[upper.tri(M_control,diag = T)] <-0
+M <- M_control + M_case
+
+pdf(file=paste("./pearson_corrplots/Pearson_correlation_plot_control_vs_case_focus_region_in_chr",i,".pdf",sep = ""),family = "Courier",width = 15,height = 15)
+corrplot(M,
+         method = "square", tl.cex = 1, tl.col = 'black',
+         diag = FALSE,tl.srt=45,addgrid.col = NA,is.corr = FALSE,cl.lim = c(-1,1),addCoef.col = "black",
+         number.cex = 0.3,
+         title = "Pearson : chr20:29306401-29307400 /n to chr20:30747301-30747500")
+dev.off()
 
 
-pairs.panels(my_data, 
+
+pdf(file=paste("./pearson_corrplots/Pearson_Case_Scatter_plots_Focus_region_in_chr",i,".pdf",sep = ""),family = "Courier",width = 50,height = 50)
+
+pairs.panels(case_focus_region,
              smooth = F, scale = T,lm=T,cor = T,stars = T,
              method = "pearson", # correlation method
              hist.col = "#00AFBB",
              density = F,  # show density plots
-             ellipses = F # show correlation ellipses
+             ellipses = F # show correlation ellipses,
 )
 
 
 dev.off()
 
 
-?chart.Correlation
-
-v1 <- as.numeric(corsiv_methy_df_subset_chr_control[rownames(corsiv_methy_df_subset_chr_control)=="chr20:29752801-29753300",])
-v2 <- as.numeric(corsiv_methy_df_subset_chr_control[rownames(corsiv_methy_df_subset_chr_control)=="chr20:29753301-29754200",])
-cor.test(v1,v2,method = "pearson")
-plot(v1,v2,xlab = "chr20:29752801-29753300",ylab="chr20:29753301-29754200",main = "Control samples",col="black",pch=16)
-
-
-
-
-
-CoRSIV1_all <- df[df$V11=="chr20:29752801-29753300",]
-CoRSIV1_all <- merge(CoRSIV1_all,temp_table,by.x="name",by.y = "ID1")
-CoRSIV1_all$tatal_read_count <- CoRSIV1_all$V5 + CoRSIV1_all$V6
-CoRSIV1_all_cases <- CoRSIV1_all[CoRSIV1_all$Case_status=="case",]
-CoRSIV1_all_control <- CoRSIV1_all[CoRSIV1_all$Case_status=="control",]
-
-
-
-control_depth_R1 <- data.frame( 
-    CoRSIV1_all_control  %>%
-    group_by(name) %>%
-    summarise(mean_read_depth = mean(tatal_read_count))
-)
-
-ggplot(control_depth_R1, aes(x=name, y=mean_read_depth, fill=name)) +
-    geom_bar(stat="identity")+theme_minimal()+ylim(0,75)
-
-
-case_depth_R1 <- data.frame(
-    CoRSIV1_all_cases  %>%
-    group_by(name) %>%
-    summarise(mean_read_depth = mean(tatal_read_count))
-)
-
-ggplot(case_depth_R1, aes(x=name, y=mean_read_depth, fill=name)) +
-    geom_bar(stat="identity")+theme_minimal()+ylim(0,75)
-
-
-
-
-CoRSIV1_all <- df[df$V11=="chr20:29753301-29754200",]
-CoRSIV1_all <- merge(CoRSIV1_all,temp_table,by.x="name",by.y = "ID1")
-CoRSIV1_all$tatal_read_count <- CoRSIV1_all$V5 + CoRSIV1_all$V6
-CoRSIV1_all_cases <- CoRSIV1_all[CoRSIV1_all$Case_status=="case",]
-CoRSIV1_all_control <- CoRSIV1_all[CoRSIV1_all$Case_status=="control",]
-
-
-
-control_depth_R2 <- data.frame( 
-    CoRSIV1_all_control  %>%
-        group_by(name) %>%
-        summarise(mean_read_depth = mean(tatal_read_count))
-)
-
-ggplot(control_depth_R2, aes(x=name, y=mean_read_depth, fill=name)) +
-    geom_bar(stat="identity")+theme_minimal()+ylim(0,75)
-
-
-case_depth_R2 <- data.frame(
-    CoRSIV1_all_cases  %>%
-        group_by(name) %>%
-        summarise(mean_read_depth = mean(tatal_read_count))
-)
-
-ggplot(case_depth_R2, aes(x=name, y=mean_read_depth, fill=name)) +
-    geom_bar(stat="identity")+theme_minimal()+ylim(0,75)
-
-
-plot(control_depth_R1$mean_read_depth,control_depth_R2$mean_read_depth,xlab = "chr20:29752801-29753300",ylab="chr20:29753301-29754200",main = "control depth",col="black",pch=16)
-
-plot(case_depth_R1$mean_read_depth,case_depth_R2$mean_read_depth,xlab = "chr20:29752801-29753300",ylab="chr20:29753301-29754200",main = "case depth",col="black",pch=16)
-
-
-
-v1 <- as.numeric(corsiv_methy_df_subset_chr_case[rownames(corsiv_methy_df_subset_chr_case)=="chr20:29752801-29753300",])
-v2 <- as.numeric(corsiv_methy_df_subset_chr_case[rownames(corsiv_methy_df_subset_chr_case)=="chr20:29753301-29754200",])
-
-cor.test(v1,v2,method = "pearson")
-plot(v1,v2,xlab = "chr20:29752801-29753300",ylab="chr20:29753301-29754200",main = "Case samples",col="black",pch=16)
+# ?chart.Correlation
+# 
+# v1 <- as.numeric(corsiv_methy_df_subset_chr_control[rownames(corsiv_methy_df_subset_chr_control)=="chr20:29752801-29753300",])
+# v2 <- as.numeric(corsiv_methy_df_subset_chr_control[rownames(corsiv_methy_df_subset_chr_control)=="chr20:29753301-29754200",])
+# cor.test(v1,v2,method = "pearson")
+# plot(v1,v2,xlab = "chr20:29752801-29753300",ylab="chr20:29753301-29754200",main = "Control samples",col="black",pch=16)
+# 
+# 
+# 
+# 
+# 
+# CoRSIV1_all <- df[df$V11=="chr20:29752801-29753300",]
+# CoRSIV1_all <- merge(CoRSIV1_all,temp_table,by.x="name",by.y = "ID1")
+# CoRSIV1_all$tatal_read_count <- CoRSIV1_all$V5 + CoRSIV1_all$V6
+# CoRSIV1_all_cases <- CoRSIV1_all[CoRSIV1_all$Case_status=="case",]
+# CoRSIV1_all_control <- CoRSIV1_all[CoRSIV1_all$Case_status=="control",]
+# 
+# 
+# 
+# control_depth_R1 <- data.frame( 
+#     CoRSIV1_all_control  %>%
+#     group_by(name) %>%
+#     summarise(mean_read_depth = mean(tatal_read_count))
+# )
+# 
+# ggplot(control_depth_R1, aes(x=name, y=mean_read_depth, fill=name)) +
+#     geom_bar(stat="identity")+theme_minimal()+ylim(0,75)
+# 
+# 
+# case_depth_R1 <- data.frame(
+#     CoRSIV1_all_cases  %>%
+#     group_by(name) %>%
+#     summarise(mean_read_depth = mean(tatal_read_count))
+# )
+# 
+# ggplot(case_depth_R1, aes(x=name, y=mean_read_depth, fill=name)) +
+#     geom_bar(stat="identity")+theme_minimal()+ylim(0,75)
+# 
+# 
+# 
+# 
+# CoRSIV1_all <- df[df$V11=="chr20:29753301-29754200",]
+# CoRSIV1_all <- merge(CoRSIV1_all,temp_table,by.x="name",by.y = "ID1")
+# CoRSIV1_all$tatal_read_count <- CoRSIV1_all$V5 + CoRSIV1_all$V6
+# CoRSIV1_all_cases <- CoRSIV1_all[CoRSIV1_all$Case_status=="case",]
+# CoRSIV1_all_control <- CoRSIV1_all[CoRSIV1_all$Case_status=="control",]
+# 
+# 
+# 
+# control_depth_R2 <- data.frame( 
+#     CoRSIV1_all_control  %>%
+#         group_by(name) %>%
+#         summarise(mean_read_depth = mean(tatal_read_count))
+# )
+# 
+# ggplot(control_depth_R2, aes(x=name, y=mean_read_depth, fill=name)) +
+#     geom_bar(stat="identity")+theme_minimal()+ylim(0,75)
+# 
+# 
+# case_depth_R2 <- data.frame(
+#     CoRSIV1_all_cases  %>%
+#         group_by(name) %>%
+#         summarise(mean_read_depth = mean(tatal_read_count))
+# )
+# 
+# ggplot(case_depth_R2, aes(x=name, y=mean_read_depth, fill=name)) +
+#     geom_bar(stat="identity")+theme_minimal()+ylim(0,75)
+# 
+# 
+# plot(control_depth_R1$mean_read_depth,control_depth_R2$mean_read_depth,xlab = "chr20:29752801-29753300",ylab="chr20:29753301-29754200",main = "control depth",col="black",pch=16)
+# 
+# plot(case_depth_R1$mean_read_depth,case_depth_R2$mean_read_depth,xlab = "chr20:29752801-29753300",ylab="chr20:29753301-29754200",main = "case depth",col="black",pch=16)
+# 
+# 
+# 
+# v1 <- as.numeric(corsiv_methy_df_subset_chr_case[rownames(corsiv_methy_df_subset_chr_case)=="chr20:29752801-29753300",])
+# v2 <- as.numeric(corsiv_methy_df_subset_chr_case[rownames(corsiv_methy_df_subset_chr_case)=="chr20:29753301-29754200",])
+# 
+# cor.test(v1,v2,method = "pearson")
+# plot(v1,v2,xlab = "chr20:29752801-29753300",ylab="chr20:29753301-29754200",main = "Case samples",col="black",pch=16)
 
 
 
