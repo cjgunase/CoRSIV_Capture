@@ -1,0 +1,668 @@
+[2020-08-18 11:39:24,050] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/gunasekara/.conda/envs/py37/lib/python3.7/site-packages/multiqc_config.yaml
+[2020-08-18 11:39:24,050] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/gunasekara/.multiqc_config.yaml
+[2020-08-18 11:39:24,050] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2020-08-18 11:39:24,050] multiqc                                            [DEBUG  ]  Command used: /home/gunasekara/.conda/envs/py37/bin/multiqc .
+[2020-08-18 11:39:25,252] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.9
+[2020-08-18 11:39:25,253] multiqc                                            [INFO   ]  This is MultiQC v1.9
+[2020-08-18 11:39:25,253] multiqc                                            [DEBUG  ]  Command     : /home/gunasekara/.conda/envs/py37/bin/multiqc .
+[2020-08-18 11:39:25,253] multiqc                                            [DEBUG  ]  Working dir : /home/gunasekara/CoRSIV_Capture/hanis_data_2020_aug
+[2020-08-18 11:39:25,253] multiqc                                            [INFO   ]  Template    : default
+[2020-08-18 11:39:25,253] multiqc                                            [DEBUG  ]  Running Python 3.7.7 (default, May  7 2020, 21:25:33)  [GCC 7.3.0]
+[2020-08-18 11:39:25,253] multiqc                                            [INFO   ]  Searching   : /home/gunasekara/CoRSIV_Capture/hanis_data_2020_aug
+[2020-08-18 11:39:25,254] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, conpair, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, homer, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dedup, damageprofiler, biobambam2, mtnucratio, picard, prokka, samblaster, samtools, sexdeterrmine, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, bbmap, bismark, biscuit, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, snpsplit, kat, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, pycoqc, minionqc, multivcfanalyzer, clusterflow, bcl2fastq, interop, ivar, flash, seqyclean
+[2020-08-18 11:39:25,255] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmph3q43bdo
+[2020-08-18 11:39:25,924] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: ./multiqc_data
+[2020-08-18 11:39:26,001] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_001_S1_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,002] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_001_S1_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,002] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_002_S2_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,002] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_002_S2_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,002] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_003_S3_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,003] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_003_S3_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,003] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_004_S4_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,003] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_004_S4_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,003] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_005_S5_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,003] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_005_S5_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,003] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_006_S6_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,004] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_006_S6_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,004] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_007_S7_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,004] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_007_S7_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,004] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_008_S8_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,004] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_008_S8_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,005] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_009_S9_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,005] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_009_S9_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,005] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_010_S10_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,005] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_010_S10_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,005] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_011_S11_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,005] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_011_S11_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,006] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_012_S12_L001_R1_001.fastq.gz
+[2020-08-18 11:39:26,006] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_012_S12_L001_R2_001.fastq.gz
+[2020-08-18 11:39:26,104] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216861.out
+[2020-08-18 11:39:26,108] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216861.out
+[2020-08-18 11:39:26,223] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_001_S1_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:26,225] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_001_S1_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:26,233] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_010_S10_L001_R1_001_val_1.fq
+[2020-08-18 11:39:26,279] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216862.out
+[2020-08-18 11:39:26,282] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216862.out
+[2020-08-18 11:39:26,366] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216863.out
+[2020-08-18 11:39:26,369] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216863.out
+[2020-08-18 11:39:26,465] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216865.out
+[2020-08-18 11:39:26,468] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216865.out
+[2020-08-18 11:39:26,555] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216868.out
+[2020-08-18 11:39:26,558] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216868.out
+[2020-08-18 11:39:26,672] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216869.out
+[2020-08-18 11:39:26,674] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216869.out
+[2020-08-18 11:39:26,756] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216867.out
+[2020-08-18 11:39:26,758] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216867.out
+[2020-08-18 11:39:26,822] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216872.out
+[2020-08-18 11:39:26,825] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216872.out
+[2020-08-18 11:39:26,948] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216871.out
+[2020-08-18 11:39:26,950] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216871.out
+[2020-08-18 11:39:27,048] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216866.out
+[2020-08-18 11:39:27,051] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216866.out
+[2020-08-18 11:39:27,146] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216870.out
+[2020-08-18 11:39:27,149] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216870.out
+[2020-08-18 11:39:27,252] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216864.out
+[2020-08-18 11:39:27,255] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216864.out
+[2020-08-18 11:39:27,334] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_003_S3_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,336] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_003_S3_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,347] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_002_S2_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,349] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_002_S2_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,360] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_004_S4_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,361] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_004_S4_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,371] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_011_S11_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,373] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_011_S11_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,382] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_005_S5_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,384] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_005_S5_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,393] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_012_S12_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,395] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_012_S12_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,404] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_009_S9_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,405] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_009_S9_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,414] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_006_S6_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,415] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_006_S6_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,424] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_008_S8_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,425] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_008_S8_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,434] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_007_S7_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,435] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_007_S7_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,444] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_010_S10_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,445] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_010_S10_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: multiqc_report.html
+[2020-08-18 11:39:27,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_003_S3_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_008_S8_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_003_S3_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_009_S9_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,483] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216895.out
+[2020-08-18 11:39:27,485] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216895.out
+[2020-08-18 11:39:27,606] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216899.out
+[2020-08-18 11:39:27,608] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216899.out
+[2020-08-18 11:39:27,712] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_010_S10_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,712] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_012_S12_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,736] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_001_S1_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,737] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_001_S1_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,746] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_002_S2_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,751] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_004_S4_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,752] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_004_S4_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,760] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_008_S8_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,782] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_007_S7_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,783] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_007_S7_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,791] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_002_S2_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,796] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_008_S8_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,798] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_008_S8_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,805] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_009_S9_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,809] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_005_S5_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,811] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_005_S5_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,822] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_006_S6_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,823] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_006_S6_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,830] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_012_S12_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,834] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_011_S11_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,836] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_011_S11_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,846] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_010_S10_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,847] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_010_S10_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,857] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_002_S2_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,858] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_002_S2_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,864] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: multiqc_report_1.html
+[2020-08-18 11:39:27,869] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_009_S9_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,870] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_009_S9_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,929] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_003_S3_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,931] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_003_S3_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,948] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_012_S12_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,951] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_012_S12_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:27,961] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_004_S4_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,962] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_004_S4_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,962] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_001_S1_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,962] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_001_S1_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,962] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_007_S7_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,962] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_007_S7_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,963] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_005_S5_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,963] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_005_S5_L001_R2_001_val_2.fq
+[2020-08-18 11:39:27,963] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_006_S6_L001_R1_001_val_1.fq
+[2020-08-18 11:39:27,963] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_006_S6_L001_R2_001_val_2.fq
+[2020-08-18 11:39:28,001] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_004_S4_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,003] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_004_S4_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,080] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_004_S4_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,082] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_004_S4_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,125] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_011_S11_L001_R1_001_val_1.fq
+[2020-08-18 11:39:28,125] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_011_S11_L001_R2_001_val_2.fq
+[2020-08-18 11:39:28,157] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_007_S7_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,159] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_007_S7_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,229] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_007_S7_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,231] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_007_S7_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,269] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_008_S8_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,271] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_008_S8_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,344] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_008_S8_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,346] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_008_S8_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,399] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_006_S6_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,401] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_006_S6_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,449] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_006_S6_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,451] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_006_S6_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,508] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_001_S1_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,510] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_001_S1_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,570] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_001_S1_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,572] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_001_S1_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,641] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_005_S5_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,642] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_005_S5_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,707] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_005_S5_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,709] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_005_S5_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,757] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_011_S11_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,759] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_011_S11_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,823] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_011_S11_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,824] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_011_S11_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,886] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_002_S2_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,888] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_002_S2_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:28,926] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_002_S2_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:28,928] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_002_S2_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:29,004] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_010_S10_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:29,006] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_010_S10_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:29,051] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_010_S10_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:29,052] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_010_S10_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:29,097] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216900.out
+[2020-08-18 11:39:29,098] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216900.out
+[2020-08-18 11:39:29,227] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216901.out
+[2020-08-18 11:39:29,229] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216901.out
+[2020-08-18 11:39:29,357] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216903.out
+[2020-08-18 11:39:29,358] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216903.out
+[2020-08-18 11:39:29,468] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216906.out
+[2020-08-18 11:39:29,469] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216906.out
+[2020-08-18 11:39:29,544] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216904.out
+[2020-08-18 11:39:29,545] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216904.out
+[2020-08-18 11:39:29,695] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216902.out
+[2020-08-18 11:39:29,696] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216902.out
+[2020-08-18 11:39:29,787] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216905.out
+[2020-08-18 11:39:29,788] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216905.out
+[2020-08-18 11:39:29,920] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216898.out
+[2020-08-18 11:39:29,921] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216898.out
+[2020-08-18 11:39:30,052] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216897.out
+[2020-08-18 11:39:30,053] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216897.out
+[2020-08-18 11:39:30,141] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: slurm-216896.out
+[2020-08-18 11:39:30,142] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: slurm-216896.out
+[2020-08-18 11:39:30,206] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_001_S1_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,206] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_001_S1_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,206] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_001_S1_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,207] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_002_S2_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,207] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_002_S2_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,207] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_002_S2_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,207] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_003_S3_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,208] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_008_S8_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,208] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_008_S8_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,208] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_005_S5_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,214] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_009_S9_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:30,216] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_009_S9_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:30,280] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_009_S9_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:30,282] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_009_S9_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:30,315] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_010_S10_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,316] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_009_S9_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,316] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_003_S3_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,316] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_004_S4_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,317] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_011_S11_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,317] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_011_S11_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,317] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_006_S6_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,318] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_012_S12_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,318] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_009_S9_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,319] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_007_S7_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,319] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_005_S5_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,319] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_010_S10_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,352] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_003_S3_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:30,353] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_003_S3_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:30,420] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_003_S3_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:30,421] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_003_S3_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:30,450] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_003_S3_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,450] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_012_S12_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_003_S3_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_004_S4_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_004_S4_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_011_S11_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,451] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_006_S6_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,452] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_006_S6_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,452] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_012_S12_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,452] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_012_S12_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,452] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_009_S9_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,452] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_009_S9_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,452] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_007_S7_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,453] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHH_context_UT_007_S7_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,453] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_008_S8_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,453] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_005_S5_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,460] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_012_S12_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:30,461] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_012_S12_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:30,505] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_012_S12_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:30,506] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_012_S12_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:30,534] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CpG_context_UT_010_S10_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,534] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: CHG_context_UT_010_S10_L001_R1_001_val_1_bismark_bt2_pe.txt.gz
+[2020-08-18 11:39:30,535] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_002_S2_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,535] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_006_S6_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,535] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_005_S5_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,536] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_010_S10_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,536] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_003_S3_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,536] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_007_S7_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,537] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_008_S8_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,537] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_011_S11_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,537] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_009_S9_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,537] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_012_S12_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,537] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_004_S4_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_001_S1_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_007_S7_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_008_S8_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_005_S5_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_006_S6_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_001_S1_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,539] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_004_S4_L001_R1_001_val_1_bismark_bt2_pe.CpG_report.txt.gz
+[2020-08-18 11:39:30,539] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_002_S2_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,539] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: UT_011_S11_L001_R1_001_val_1_bismark_bt2_pe.bam
+[2020-08-18 11:39:30,562] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: multiqc_cutadapt.txt
+[2020-08-18 11:39:30,569] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: multiqc_bismark_alignment.txt
+[2020-08-18 11:39:30,574] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: multiqc_sources.txt
+[2020-08-18 11:39:30,576] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: multiqc_sources.txt
+[2020-08-18 11:39:30,602] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: multiqc_data.json
+[2020-08-18 11:39:30,603] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: multiqc_data.json
+[2020-08-18 11:39:30,603] multiqc                                            [DEBUG  ]  File ignored by rockhopper because it exceeded search pattern filesize limit: multiqc_data.json
+[2020-08-18 11:39:30,603] multiqc                                            [DEBUG  ]  File ignored by rseqc/bam_stat because it exceeded search pattern filesize limit: multiqc_data.json
+[2020-08-18 11:39:30,603] multiqc                                            [DEBUG  ]  File ignored by rseqc/junction_annotation because it exceeded search pattern filesize limit: multiqc_data.json
+[2020-08-18 11:39:30,603] multiqc                                            [DEBUG  ]  File ignored by rseqc/read_distribution because it exceeded search pattern filesize limit: multiqc_data.json
+[2020-08-18 11:39:30,603] multiqc                                            [DEBUG  ]  File ignored by rseqc/infer_experiment because it exceeded search pattern filesize limit: multiqc_data.json
+[2020-08-18 11:39:30,739] multiqc                                            [DEBUG  ]  File ignored by stacks/sumstats because it exceeded search pattern filesize limit: multiqc_data.json
+[2020-08-18 11:39:31,824] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: multiqc_fastqc.txt
+[2020-08-18 11:39:31,825] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: multiqc_fastqc.txt
+[2020-08-18 11:39:31,829] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: multiqc_general_stats.txt
+[2020-08-18 11:39:31,830] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: multiqc_general_stats.txt
+[2020-08-18 11:39:31,855] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: multiqc.log
+[2020-08-18 11:39:31,856] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: multiqc.log
+[2020-08-18 11:39:31,900] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_004_S4_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:31,901] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_004_S4_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:31,956] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_004_S4_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:31,957] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_004_S4_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,015] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_007_S7_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,016] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_007_S7_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,046] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_007_S7_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,047] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_007_S7_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,075] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_008_S8_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,076] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_008_S8_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,105] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_008_S8_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,106] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_008_S8_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,132] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_006_S6_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,133] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_006_S6_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,160] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_006_S6_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,161] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_006_S6_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,206] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_001_S1_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,207] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_001_S1_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,234] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_001_S1_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,235] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_001_S1_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,260] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_005_S5_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,261] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_005_S5_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,286] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_005_S5_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,287] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_005_S5_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,311] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_011_S11_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,312] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_011_S11_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,338] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_011_S11_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,340] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_011_S11_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,364] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_002_S2_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,365] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_002_S2_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,390] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_002_S2_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,391] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_002_S2_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,416] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_010_S10_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,417] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_010_S10_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,441] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_010_S10_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,442] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_010_S10_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,467] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_009_S9_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,468] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_009_S9_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,493] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_009_S9_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,494] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_009_S9_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,519] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_003_S3_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,520] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_003_S3_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,546] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_003_S3_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,547] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_003_S3_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,571] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_012_S12_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,572] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_012_S12_L001_R1_001_val_1_fastqc.html
+[2020-08-18 11:39:32,598] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_012_S12_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,599] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_012_S12_L001_R2_001_val_2_fastqc.html
+[2020-08-18 11:39:32,634] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_001_S1_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,634] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_001_S1_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,652] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_001_S1_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,653] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_001_S1_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,660] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_002_S2_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,661] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_002_S2_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,685] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_002_S2_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,686] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_002_S2_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,693] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_003_S3_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,694] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_003_S3_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,700] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_003_S3_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,701] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_003_S3_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,708] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_004_S4_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,709] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_004_S4_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,716] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_004_S4_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,717] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_004_S4_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,723] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_005_S5_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,724] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_005_S5_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,733] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_005_S5_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,734] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_005_S5_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,740] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_006_S6_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,741] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_006_S6_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,756] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_006_S6_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,757] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_006_S6_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,764] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_007_S7_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,765] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_007_S7_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,794] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_007_S7_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,795] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_007_S7_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,802] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_008_S8_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,803] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_008_S8_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,811] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_008_S8_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,812] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_008_S8_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,819] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_009_S9_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,820] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_009_S9_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,835] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_009_S9_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,836] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_009_S9_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,842] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_010_S10_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,843] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_010_S10_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,852] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_010_S10_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,853] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_010_S10_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,859] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_011_S11_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,860] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_011_S11_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,869] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_011_S11_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,870] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_011_S11_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,889] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_012_S12_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,890] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_012_S12_L001_R1_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,897] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: UT_012_S12_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:32,898] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: UT_012_S12_L001_R2_001.fastq.gz_trimming_report.txt
+[2020-08-18 11:39:35,318] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.2.2
+[2020-08-18 11:39:35,335] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.2.2
+[2020-08-18 11:39:35,362] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2020-08-18 11:39:35,395] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2020-08-18 11:39:35,445] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2020-08-18 11:39:35,472] multiqc                                            [DEBUG  ]  No samples found: somalier
+[2020-08-18 11:39:35,545] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2020-08-18 11:39:35,624] multiqc                                            [DEBUG  ]  No samples found: mosdepth
+[2020-08-18 11:39:35,646] multiqc                                            [DEBUG  ]  No samples found: phantompeakqualtools
+[2020-08-18 11:39:35,652] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2020-08-18 11:39:35,697] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2020-08-18 11:39:35,734] multiqc                                            [DEBUG  ]  No samples found: quast
+[2020-08-18 11:39:35,775] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2020-08-18 11:39:35,852] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2020-08-18 11:39:35,878] multiqc                                            [DEBUG  ]  No samples found: rockhopper
+[2020-08-18 11:39:35,892] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2020-08-18 11:39:35,981] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2020-08-18 11:39:35,997] multiqc                                            [DEBUG  ]  No samples found: busco
+[2020-08-18 11:39:36,020] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2020-08-18 11:39:36,068] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2020-08-18 11:39:36,110] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2020-08-18 11:39:36,199] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2020-08-18 11:39:36,233] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2020-08-18 11:39:36,284] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2020-08-18 11:39:36,290] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2020-08-18 11:39:36,364] multiqc                                            [DEBUG  ]  No samples found: happy
+[2020-08-18 11:39:36,400] multiqc                                            [DEBUG  ]  No samples found: mirtop
+[2020-08-18 11:39:36,437] multiqc                                            [DEBUG  ]  No samples found: homer
+[2020-08-18 11:39:36,485] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2020-08-18 11:39:36,504] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2020-08-18 11:39:36,535] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2020-08-18 11:39:36,554] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2020-08-18 11:39:36,616] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2020-08-18 11:39:36,640] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2020-08-18 11:39:36,686] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2020-08-18 11:39:36,807] multiqc                                            [DEBUG  ]  No samples found: fgbio
+[2020-08-18 11:39:36,949] multiqc                                            [DEBUG  ]  No samples found: dragen
+[2020-08-18 11:39:37,021] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2020-08-18 11:39:37,099] multiqc                                            [DEBUG  ]  No samples found: damageprofiler
+[2020-08-18 11:39:37,275] multiqc                                            [DEBUG  ]  No samples found: biobambam2
+[2020-08-18 11:39:37,337] multiqc                                            [DEBUG  ]  No samples found: mtnucratio
+[2020-08-18 11:39:37,342] multiqc                                            [DEBUG  ]  No samples found: picard
+[2020-08-18 11:39:37,349] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2020-08-18 11:39:37,365] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2020-08-18 11:39:37,442] multiqc                                            [DEBUG  ]  No samples found: samtools
+[2020-08-18 11:39:37,458] multiqc                                            [DEBUG  ]  No samples found: sexdeterrmine
+[2020-08-18 11:39:37,480] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2020-08-18 11:39:37,495] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2020-08-18 11:39:37,584] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2020-08-18 11:39:37,591] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2020-08-18 11:39:37,611] multiqc                                            [DEBUG  ]  No samples found: stacks
+[2020-08-18 11:39:37,628] multiqc                                            [DEBUG  ]  No samples found: varscan2
+[2020-08-18 11:39:37,762] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2020-08-18 11:39:37,982] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:37,989] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:37,990] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:37,990] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:37,991] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:37,992] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:37,992] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:37,993] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:37,994] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:38,002] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:38,002] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,009] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,010] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,026] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,027] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,028] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,028] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,029] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,030] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,030] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,042] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_004_S4_L001_R1_001_val_1
+[2020-08-18 11:39:38,043] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,044] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,044] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,045] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,046] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,046] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,047] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,047] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,048] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,048] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,049] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,050] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,050] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,051] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,051] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,052] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,053] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,063] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,064] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,064] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,065] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,065] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,066] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,066] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,067] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,076] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,077] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,077] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,078] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,078] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,079] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,093] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,094] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,095] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,095] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,096] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,096] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,100] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,101] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,101] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,109] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,110] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,111] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,111] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,112] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,113] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,113] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,114] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,114] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,115] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,116] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,116] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,117] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,118] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,118] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,119] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,119] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,120] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,121] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,121] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,130] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_001_S1_L001_R1_001_val_1
+[2020-08-18 11:39:38,147] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,148] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,149] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,161] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,170] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,170] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,171] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,172] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,173] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,174] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,175] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,175] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,176] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,177] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,177] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,191] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,192] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,192] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,193] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,193] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,205] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_007_S7_L001_R1_001_val_1
+[2020-08-18 11:39:38,206] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_008_S8_L001_R1_001_val_1
+[2020-08-18 11:39:38,207] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_006_S6_L001_R1_001_val_1
+[2020-08-18 11:39:38,207] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_005_S5_L001_R1_001_val_1
+[2020-08-18 11:39:38,208] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_002_S2_L001_R1_001_val_1
+[2020-08-18 11:39:38,223] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_011_S11_L001_R1_001_val_1
+[2020-08-18 11:39:38,223] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_010_S10_L001_R1_001_val_1
+[2020-08-18 11:39:38,224] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_009_S9_L001_R1_001_val_1
+[2020-08-18 11:39:38,241] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_003_S3_L001_R1_001_val_1
+[2020-08-18 11:39:38,242] multiqc.modules.bismark.bismark                    [DEBUG  ]  Duplicate alignment sample log found! Overwriting: UT_012_S12_L001_R1_001_val_1
+[2020-08-18 11:39:38,541] multiqc.modules.bismark.bismark                    [INFO   ]  Found 12 alignment reports
+[2020-08-18 11:39:38,554] multiqc.modules.bismark.bismark                    [INFO   ]  Found 12 methextract reports
+[2020-08-18 11:39:38,620] multiqc                                            [DEBUG  ]  No samples found: biscuit
+[2020-08-18 11:39:38,644] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2020-08-18 11:39:38,650] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2020-08-18 11:39:38,718] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2020-08-18 11:39:38,748] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2020-08-18 11:39:38,780] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2020-08-18 11:39:38,819] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2020-08-18 11:39:38,846] multiqc                                            [DEBUG  ]  No samples found: star
+[2020-08-18 11:39:38,877] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2020-08-18 11:39:38,928] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2020-08-18 11:39:38,960] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2020-08-18 11:39:38,979] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2020-08-18 11:39:39,026] multiqc                                            [DEBUG  ]  No samples found: snpsplit
+[2020-08-18 11:39:39,095] multiqc                                            [DEBUG  ]  No samples found: kat
+[2020-08-18 11:39:39,122] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2020-08-18 11:39:39,155] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2020-08-18 11:39:39,193] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2020-08-18 11:39:39,284] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_001_S1_L001_R1_001
+[2020-08-18 11:39:39,713] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_003_S3_L001_R1_001
+[2020-08-18 11:39:39,715] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_002_S2_L001_R1_001
+[2020-08-18 11:39:39,717] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_004_S4_L001_R1_001
+[2020-08-18 11:39:39,718] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_011_S11_L001_R1_001
+[2020-08-18 11:39:39,720] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_005_S5_L001_R1_001
+[2020-08-18 11:39:39,722] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_012_S12_L001_R1_001
+[2020-08-18 11:39:39,724] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_009_S9_L001_R1_001
+[2020-08-18 11:39:39,726] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_006_S6_L001_R1_001
+[2020-08-18 11:39:39,727] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_008_S8_L001_R1_001
+[2020-08-18 11:39:39,729] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_007_S7_L001_R1_001
+[2020-08-18 11:39:39,731] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_010_S10_L001_R1_001
+[2020-08-18 11:39:39,733] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_001_S1_L001_R2_001
+[2020-08-18 11:39:39,735] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_004_S4_L001_R2_001
+[2020-08-18 11:39:39,736] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_007_S7_L001_R2_001
+[2020-08-18 11:39:39,738] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_008_S8_L001_R2_001
+[2020-08-18 11:39:39,740] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_005_S5_L001_R2_001
+[2020-08-18 11:39:39,742] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_006_S6_L001_R2_001
+[2020-08-18 11:39:39,744] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_011_S11_L001_R2_001
+[2020-08-18 11:39:39,746] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_010_S10_L001_R2_001
+[2020-08-18 11:39:39,747] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_002_S2_L001_R2_001
+[2020-08-18 11:39:39,749] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_009_S9_L001_R2_001
+[2020-08-18 11:39:39,751] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_003_S3_L001_R2_001
+[2020-08-18 11:39:39,753] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_012_S12_L001_R2_001
+[2020-08-18 11:39:39,755] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_001_S1_L001_R1_001
+[2020-08-18 11:39:39,757] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_001_S1_L001_R2_001
+[2020-08-18 11:39:39,758] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_002_S2_L001_R1_001
+[2020-08-18 11:39:39,760] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_002_S2_L001_R2_001
+[2020-08-18 11:39:39,762] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_003_S3_L001_R1_001
+[2020-08-18 11:39:39,764] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_003_S3_L001_R2_001
+[2020-08-18 11:39:39,766] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_004_S4_L001_R1_001
+[2020-08-18 11:39:39,767] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_004_S4_L001_R2_001
+[2020-08-18 11:39:39,769] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_005_S5_L001_R1_001
+[2020-08-18 11:39:39,771] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_005_S5_L001_R2_001
+[2020-08-18 11:39:39,773] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_006_S6_L001_R1_001
+[2020-08-18 11:39:39,775] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_006_S6_L001_R2_001
+[2020-08-18 11:39:39,777] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_007_S7_L001_R1_001
+[2020-08-18 11:39:39,778] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_007_S7_L001_R2_001
+[2020-08-18 11:39:39,780] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_008_S8_L001_R1_001
+[2020-08-18 11:39:39,782] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_008_S8_L001_R2_001
+[2020-08-18 11:39:39,784] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_009_S9_L001_R1_001
+[2020-08-18 11:39:39,786] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_009_S9_L001_R2_001
+[2020-08-18 11:39:39,788] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_010_S10_L001_R1_001
+[2020-08-18 11:39:39,789] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_010_S10_L001_R2_001
+[2020-08-18 11:39:39,791] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_011_S11_L001_R1_001
+[2020-08-18 11:39:39,793] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_011_S11_L001_R2_001
+[2020-08-18 11:39:39,795] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_012_S12_L001_R1_001
+[2020-08-18 11:39:39,797] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Duplicate sample name found! Overwriting: UT_012_S12_L001_R2_001
+[2020-08-18 11:39:39,798] multiqc.modules.cutadapt.cutadapt                  [INFO   ]  Found 24 reports
+[2020-08-18 11:39:39,861] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2020-08-18 11:39:39,886] multiqc                                            [DEBUG  ]  No samples found: kaiju
+[2020-08-18 11:39:39,902] multiqc                                            [DEBUG  ]  No samples found: kraken
+[2020-08-18 11:39:39,933] multiqc                                            [DEBUG  ]  No samples found: malt
+[2020-08-18 11:39:39,968] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2020-08-18 11:39:39,983] multiqc                                            [DEBUG  ]  No samples found: sickle
+[2020-08-18 11:39:39,989] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2020-08-18 11:39:40,008] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2020-08-18 11:39:40,043] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2020-08-18 11:39:40,075] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2020-08-18 11:39:40,109] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2020-08-18 11:39:40,145] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2020-08-18 11:39:41,124] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_004_S4_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_004_S4_L001_R1_001_val_1'
+[2020-08-18 11:39:41,124] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_004_S4_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_004_S4_L001_R2_001_val_2'
+[2020-08-18 11:39:41,125] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_007_S7_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_007_S7_L001_R1_001_val_1'
+[2020-08-18 11:39:41,125] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_007_S7_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_007_S7_L001_R2_001_val_2'
+[2020-08-18 11:39:41,125] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_008_S8_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_008_S8_L001_R1_001_val_1'
+[2020-08-18 11:39:41,125] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_008_S8_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_008_S8_L001_R2_001_val_2'
+[2020-08-18 11:39:41,125] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_006_S6_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_006_S6_L001_R1_001_val_1'
+[2020-08-18 11:39:41,126] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_006_S6_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_006_S6_L001_R2_001_val_2'
+[2020-08-18 11:39:41,126] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_001_S1_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_001_S1_L001_R1_001_val_1'
+[2020-08-18 11:39:41,126] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_001_S1_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_001_S1_L001_R2_001_val_2'
+[2020-08-18 11:39:41,126] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_005_S5_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_005_S5_L001_R1_001_val_1'
+[2020-08-18 11:39:41,126] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_005_S5_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_005_S5_L001_R2_001_val_2'
+[2020-08-18 11:39:41,127] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_011_S11_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_011_S11_L001_R1_001_val_1'
+[2020-08-18 11:39:41,127] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_011_S11_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_011_S11_L001_R2_001_val_2'
+[2020-08-18 11:39:41,127] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_002_S2_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_002_S2_L001_R1_001_val_1'
+[2020-08-18 11:39:41,127] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_002_S2_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_002_S2_L001_R2_001_val_2'
+[2020-08-18 11:39:41,127] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_010_S10_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_010_S10_L001_R1_001_val_1'
+[2020-08-18 11:39:41,128] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_010_S10_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_010_S10_L001_R2_001_val_2'
+[2020-08-18 11:39:41,128] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_009_S9_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_009_S9_L001_R1_001_val_1'
+[2020-08-18 11:39:41,128] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_009_S9_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_009_S9_L001_R2_001_val_2'
+[2020-08-18 11:39:41,128] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_003_S3_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_003_S3_L001_R1_001_val_1'
+[2020-08-18 11:39:41,128] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_003_S3_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_003_S3_L001_R2_001_val_2'
+[2020-08-18 11:39:41,129] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_012_S12_L001_R1_001_val_1_fastqc.zip' as already parsed 'UT_012_S12_L001_R1_001_val_1'
+[2020-08-18 11:39:41,129] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'UT_012_S12_L001_R2_001_val_2_fastqc.zip' as already parsed 'UT_012_S12_L001_R2_001_val_2'
+[2020-08-18 11:39:41,129] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 24 reports
+[2020-08-18 11:39:41,811] multiqc                                            [DEBUG  ]  No samples found: pycoqc
+[2020-08-18 11:39:41,837] multiqc                                            [DEBUG  ]  No samples found: minionqc
+[2020-08-18 11:39:41,866] multiqc                                            [DEBUG  ]  No samples found: multivcfanalyzer
+[2020-08-18 11:39:41,910] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2020-08-18 11:39:41,944] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2020-08-18 11:39:41,967] multiqc                                            [DEBUG  ]  No samples found: interop
+[2020-08-18 11:39:41,998] multiqc                                            [DEBUG  ]  No samples found: ivar
+[2020-08-18 11:39:42,028] multiqc                                            [DEBUG  ]  No samples found: flash
+[2020-08-18 11:39:42,069] multiqc                                            [DEBUG  ]  No samples found: seqyclean
+[2020-08-18 11:39:42,167] multiqc                                            [INFO   ]  Compressing plot data
+[2020-08-18 11:39:42,941] multiqc                                            [WARNING]  Previous MultiQC output found! Adjusting filenames..
+[2020-08-18 11:39:42,942] multiqc                                            [WARNING]  Use -f or --force to overwrite existing reports instead
+[2020-08-18 11:39:42,942] multiqc                                            [INFO   ]  Report      : multiqc_report_2.html
+[2020-08-18 11:39:42,942] multiqc                                            [INFO   ]  Data        : multiqc_data_2
+[2020-08-18 11:39:42,942] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmph3q43bdo/multiqc_data' to '/home/gunasekara/CoRSIV_Capture/hanis_data_2020_aug/multiqc_data_2'
+[2020-08-18 11:39:43,538] multiqc                                            [INFO   ]  MultiQC complete
